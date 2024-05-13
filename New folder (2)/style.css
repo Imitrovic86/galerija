@@ -1,0 +1,94 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+.container {
+  padding: 0;
+  margin: 0 auto ;
+  width: 100%;
+  max-width: 1260px;
+  
+}
+.container h1 {
+  text-align: center;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) ;
+  padding: 20px;
+  grid-gap: 40px;
+ 
+}
+.tekst p {
+  padding: 0 auto;
+}
+.photo {
+  text-align: center;
+  padding: 20px;
+ 
+}
+.photo img {
+  width: 100%;
+  background-color: #6187f0;
+  display: block;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+.photo p{
+  background-color: #c5d8ec;
+  margin-top: 0;
+  padding: 5px;
+}
+@media screen and (min-width:768px) {
+    .gallery {
+      padding: 0 10px;
+      margin-right: 20px;
+    }
+  
+    .photo {
+      width: 100%;
+    }
+    .tekst {
+      padding: 0 10px;
+      margin: 0 20px;
+    }
+}
+@media screen and (min-width: 481px) and (max-width:767px) {
+    .gallery {
+      width: 100%;
+      padding: 0 10px;
+      margin-right: 20px;
+    
+    }
+    .photo {
+      padding: 0 10px;
+      width: 100%;
+    }
+    .tekst {
+      margin: 0 20px;
+    }
+    }
+
+@media screen and (max-width:480px) {
+
+    .gallery {
+      padding: 0 10px;
+      margin-right: 20px;
+    }
+    
+    .photo {
+      width: 100%;
+      padding: 0 10px;
+
+    }
+    .tekst {
+      margin: 0 20px;
+    }
+
+
+}
+
+  
